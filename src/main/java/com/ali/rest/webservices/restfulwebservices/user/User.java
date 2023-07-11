@@ -1,18 +1,26 @@
 package com.ali.rest.webservices.restfulwebservices.user;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
-import org.hibernate.annotations.CurrentTimestamp;
-
 import java.util.Date;
-
+@Entity
+@Table(name = "users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
     @Size(min = 2)
+    @Column(name = "name")
     private String name;
     @Past
+    @Column(name = "birth")
     private Date birthDate;
 
+    public User() {
+
+    }
     public User(int id, String name, Date birthDate) {
         this.id = id;
         this.name = name;
