@@ -1,0 +1,15 @@
+com\ali\rest\webservices\restfulwebservices\filtering\SomeBean.class
+com\ali\rest\webservices\restfulwebservices\exception\CustomizedResponseEntityExceptionHandler.class
+com\ali\rest\webservices\restfulwebservices\person\PersonV1.class
+com\ali\rest\webservices\restfulwebservices\exception\ExceptionResponse.class
+com\ali\rest\webservices\restfulwebservices\user\UserNotFoundException.class
+com\ali\rest\webservices\restfulwebservices\person\Name.class
+com\ali\rest\webservices\restfulwebservices\person\PersonversionongController.class
+com\ali\rest\webservices\restfulwebservices\RestfulWebServicesApplication.class
+com\ali\rest\webservices\restfulwebservices\filtering\FilteringController.class
+com\ali\rest\webservices\restfulwebservices\user\UserResource.class
+com\ali\rest\webservices\restfulwebservices\helloworld\HelloWorldController.class
+com\ali\rest\webservices\restfulwebservices\person\PersonV2.class
+com\ali\rest\webservices\restfulwebservices\helloworld\HelloWorldBean.class
+com\ali\rest\webservices\restfulwebservices\user\User.class
+com\ali\rest\webservices\restfulwebservices\user\UserDaoService.class

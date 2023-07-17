@@ -1,6 +1,7 @@
 package com.ali.rest.webservices.restfulwebservices.helloworld;
 
 import com.ali.rest.webservices.restfulwebservices.helloworld.HelloWorldBean;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContext;
@@ -12,13 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Locale;
 
+@Slf4j
 @RestController
 public class HelloWorldController {
 	@Autowired
 	private MessageSource messageSource;
-	@GetMapping("/hello")
-	public String helloWorldController(){
-		return "Salam";
+	@GetMapping("/hello/{name}")
+	public String helloWorldController(@PathVariable String name){
+		return "Salam"+" "+name;
 	}
 	@GetMapping("hello-world-bean")
 	public HelloWorldBean helloWorldBean(){
